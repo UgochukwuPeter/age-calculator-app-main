@@ -1,0 +1,156 @@
+body{
+    background-color: hsl(0, 0%, 94%);
+}
+*{
+    font-family: 'Poppins','Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.container-wrapper{
+    margin-top: 3%;
+}
+.err,.err1, .err2, .errb, .errm, .erry{
+    font-size: 12px;
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    font-style: italic;
+    display: none;
+}
+#content-wrapper{
+    width: 50%;
+    margin: auto;
+    min-height: 200px;
+    background: hsl(0, 0%, 100%) ;
+    border-radius: 15px 15px 100px 15px;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+    width: 80%;
+}
+.h-container{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+    font-weight: 800;
+    padding-bottom: 3px;
+}
+input{
+    width: 80%;
+    font-size: 32px;
+    color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid hsl(0, 0%, 86%);
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+input:hover{
+    border: 2px solid hsl(259, 100%, 65%);
+}
+
+.click-container{
+    display: flex;
+    justify-content: flex-start;
+}
+.line{
+    width: 100%;
+    margin: auto;
+    height: 2px;
+    background-color: hsl(0, 0%, 86%);
+}
+.img-logo{
+    background: hsl(259, 100%, 65%);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-logo:hover{
+    background: black;
+}
+.display p{
+font-size: 60px;
+font-weight: 800;
+font-style: italic;
+}
+.outputLine{
+    color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width: 900px ){
+     #content-wrapper{
+    width: 70%;
+    padding: 30px;
+ }
+}
+
+@media screen and (max-width: 700px ){
+     #content-wrapper{
+    width: 90%;
+    padding: 20px;
+ }
+}
+@media screen and (max-width: 500px ){
+
+.container-wrapper{
+    margin-top: 10%;
+}
+ #content-wrapper{
+    width: 90%;
+    padding: 15px;
+ }
+ .err,.err1, .err2, .errb, .errm, .erry{
+    font-size: 8px;
+}
+ .header{
+    width: 100%;
+    margin-bottom: 5%;
+ }
+ label{
+    font-size: 12px;
+ }
+ input{
+    font-size: 16px;
+ }
+ .click-container{
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 20%;
+ }
+ .img-logo{
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 20%;
+    height: 70px;
+    padding: 15px;
+    border-radius: 60%;
+ }
+ .display p{
+    font-size: 40px;
+ }
+}
+@media screen and (max-width: 375px){
+ .img-logo{
+    width: 25%;
+ }
+}
+@media screen and (max-width: 325px){
+ .img-logo{
+    width: 27%;
+ }
+}

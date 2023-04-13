@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="sytle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container-wrapper">
+    <div id="content-wrapper">
+      <div class="header">
+        <div class="h-left">
+          <div class="h-container">
+            <label>Day</label>
+            <input type="text" placeholder="DD" class="dayOfBirth" required maxlength="2">
+          </div>
+          <p class="err">This field is required</p>
+          <p class="errb">Must be a valid date</p>
+        </div>
+        <div class="h-middle">
+          <div class="h-container">
+            <label for="Day">Month</label>
+            <input type="text" placeholder="MM" class="monthOfBirth" required maxlength="2">
+          </div>
+          <p class="err">This field is required</p>
+          <p class="errm">Must be a valid month</p>
+        </div>
+        <div class="h-right">
+          <div class="h-container">
+            <label for="Day">Year</label>
+            <input type="text" placeholder="YYYY" class="yearOfBirth" required maxlength="4">
+          </div>
+          <p class="err">This field is required</p>
+          <p class="erry">Must be in the past</p>
+        </div>
+      </div>
+      <div class="click-container">
+        <div class="line"></div>
+        <div class="img-logo">
+          <img src="./assets/images/icon-arrow.svg" alt="">
+        </div>
+      </div>
+      <div class="display">
+        <p><span class="outputLine yrs">--</span> years</p>
+        <p><span class="outputLine mth">--</span> months</p>
+        <p><span class="outputLine dy">--</span> days</p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/PeterUgochukwu" target="_blank">Ugochukwu Peter</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
